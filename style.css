@@ -1,0 +1,270 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0 ; /*para espaciamiento externo super y ext y luego laterales*/
+}
+
+.caja{
+
+    width: 940px; /*ocupar el 70% de el margen*/
+    position: relative; /**/
+    margin: 0 auto; /*auto calcula en función a resolución dek usuario*/
+
+}
+
+nav {
+    position: absolute;
+    top: 110px; /*ningun espacio superior y centralizar*/
+    right: 0; /*ningun espacio en la parte derecha*/
+    
+}
+
+nav li{
+    display: inline; /*para alinear una lista ---*/
+    margin: 0 0 0 15px ; /*espaciamiento interno*/
+}
+
+nav a{
+    text-transform: uppercase; /*para cambiar el contenido a mayuscula*/
+    color: #000000;
+    font-weight: bold; /*para negrita el texto*/
+    font-size: 22px; /*tamaño de la pag*/
+    text-decoration: none; /*rayas que vienen por defecto*/
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline; /*para subrayar el codigo*/
+}
+
+.productos{
+    width: 940px; /*tamaño padron de las pantallas*/
+    margin: 0 auto;
+    padding: 50px; /*espaciamiento entre header y main*/
+
+}
+.productos li{
+
+    display: inline-block; /*Posiciona elementos uno al lado del otro*/
+    text-align: center; /*alinear texto al centro*/
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%; /*espacio externo entre los elementos*/
+    padding: 30px 20px;
+    box-sizing: border-box ; /*tamaño de la caja*/
+    border:2px solid #000000; /*para crear el borde para cada imagen*/
+    border-radius: 10px;/*para crear el borde de otras formas*/
+    
+}
+
+.productos li:hover{
+    border-color: #c78c19; /*captura el evento del usuario*/
+    
+}
+
+.productos li:active{
+    border-color: #088c19; /*captura el clic del user*/
+}
+
+.productos h2{
+    font-size: 30px; /*tamaño de la letra*/
+    font-weight: bold; /*el peso*/
+}
+
+.productos li:hover h2{
+
+    font-size: 33px; /*cambiar el tamaño de la fuente */
+}
+
+.producto-descripcion{
+    font-size: 18px;
+
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold; /*peso en negrita*/
+    margin-top: 10px; /*separar el precio de la descripción*/
+}
+
+footer{
+    text-align: center;/*alinear texto al centro*/
+    background: url(imagenes/bg.jpg);
+    padding: 40px; /*espaciamiento interno*/
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/*diccionario unicout*/
+
+/*Parte de formularios*/
+form{
+    margin: 40px 0; /*espacio entre harder y main*/
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block; /*Para hacerlo formato vertical*/
+    margin: 0 0 20px; /*espaciamiento en los 4 lados*/
+    padding: 10px 25px; /*espaciamiento interno del input*/
+    width: 50%; /*ocupar del ancho padre o padron*/
+
+}
+
+/*Para formularios compejos*/
+
+.checkbox{
+    margin: 20px 0; /*Primero horizontal y luego vertical*/
+}
+
+.enviar{
+    width: 40%;/*tamaño*/
+    padding: 15px 0; /*para formato más grande*/
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none; /*para quitar el borde*/
+    border-radius: 5px;/*puntas redondeadas*/
+    transition: 1s all;
+    cursor: pointer; /*manito con el dedo apuntando*/
+}
+
+.enviar:hover{ /*para capturar usamos el hover*/
+    background: darkorange;
+    transform: scale(1.2); /*rotate(70deg);cuando el maouse esté envima*/
+     
+}
+
+table{
+    margin: 40px 40px;/*parte externa*/
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;/*peso en negrita*/
+}
+/*Para dibujar las lineas*/
+td, th{
+    border: 1px solid #000000;/*grozor de la linea*/
+    padding: 8px 15px;/*espaciamiento interno*/
+}
+
+/*Aquí inicia el css para nuestro home*/
+
+.imagin{
+    width: 100%;
+}
+
+
+.principal{
+    padding: 3em 0; /*espaciamiento interno*/
+    background: #fefefe;
+    width: 940px; /*ancho para centralizar*/
+    margin: 0 auto;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em; /**/
+    clear: left; /**/
+}
+
+/*Espaciamiento de los parrafos*/
+
+/*Uso de los pseudo-elementos*/
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.utensilios{
+    width: 120px; 
+    float: left;  
+    margin: 0 20px 20px 0; /*superior, derecha, inferios, izquierda*/
+}
+
+.mapa{
+    padding: 3em 0; /*Espaciamiento*/
+    background: linear-gradient(#fefefe, #888888);
+   
+}
+
+.mapa p{
+    margin:  0 0 2em;
+    text-align: center;
+
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;/*Vertical al lado de la imagen*/
+    vertical-align: top;/*Hacer el texto a vertical superior*/
+}   
+.items{
+    line-height: 1.5;/*1 + 50% del tamaño padrón*/    
+}
+
+.items::before{
+    content: "★";
+}
+
+.items:first-child{ /*con nth podemos indicar a qué item aplicar el cambio*/
+    font-weight: bold; /*Al primero pintamelo de negro*/
+}
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+.video{
+    width: 560px;/*Misma anchura que la del video*/
+    margin: 1em auto;/*para poder centralizarlo*/
+}
+
+/*medias querys, permiten trabajar con ecepciones*/
+@media screen and(max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+    .lista-diferenciales{
+        width: 100%;
+    }
+}
